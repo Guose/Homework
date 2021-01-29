@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail-Margin</title>
+    <!-- <link rel="stylesheet" href="holygrail-margin.css"> -->
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Text justified center for ALL */
+        header, footer, aside, nav, main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header, footer {
+            height: 50px;
+            background-color: red;
+        }
+
+        .container {
+            overflow: hidden;
+            margin: .5rem 0;
+        }
+
+        .container nav, .container aside {
+            width: 200px;
+            height: calc(100vh - 100px - 1rem);
+        }
+
+        .container main {
+            float: left;
+            width: calc(100% - 400px - 1rem);
+            height: calc(100vh - 100px - 1rem);
+            background-color: lightskyblue;
+            margin: 0 .5rem;
+        }
+
+        .container nav {
+            float: left;
+            background-color: salmon;
+        }
+
+        .container aside {
+            float: right;
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <div class="container">
+        <nav>NAVIGATION</nav>
+        <main>MAIN</main>
+        <aside>SIDE-DEAL</aside>
+    </div>
+    <footer>FOOTER</footer>
+</body>
+
+</html>
