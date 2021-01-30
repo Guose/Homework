@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="HolyGrail.css"> -->
+    <title>Holy Grail</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        header, main, aside, nav, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header, footer {
+            height: 50px;
+            background-color: blue;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: calc(100vh - 100px - 1rem);
+            margin: .5rem 0;
+        }
+        .container aside, .container nav {
+            width: 200px;
+            background-color: greenyellow;
+        }
+        .container main {
+            flex: 1;
+            margin: 0 .5rem;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <div class="container">
+        <nav class="left-sidebar">LEFT SIDEBAR</nav>
+        <main>MAIN CONTENT</main>        
+        <aside class="right-sidebar">RIGHT SIDEBAR</aside>
+    </div>        
+    <footer>FOOTER</footer>
+
+</body>
+
+</html>
