@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="number.css">
+</head>
+
+<body>
+    <h1>Numbers Game</h1>
+    <button id="playAgain" style="visibility: hidden;">New Game</button>
+    <div id="content">
+        <div class="add">
+            <div id="enter">
+                <label id="enterNum">GUESS a number between 1 and 10...<br><br></label>
+            </div>
+            <input id="numberGuess" type="text" size="3" style="text-align: center; font-size: 24px;">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="turnStats">
+            <div id="moves">
+                <label>TURNS</label>
+            </div>
+            <div class="turnsLeft">
+                <label for="turnsLeft">Moves until game ends: </label>
+                <input id="turnsLeft" type="text" size="3" readonly style="text-align: center; font-size: 24px;">
+            </div>
+
+        </div>
+        <div class="gameStats">
+            <div id="stats">
+                <label>STATS</label>
+            </div>
+            <div class="played">
+                <label for="gamesPlayed">Games Played:</label>
+                <input id="gamesPlayed" type="text" size="2" readonly style="text-align: center; font-size: 24px;">
+            </div>
+            <div class="won">
+                <label for="gamesWon">Games Won:</label>
+                <input id="gamesWon" type="text" size="2" readonly style="text-align: center; font-size: 24px;">
+            </div>
+            <div class="score">
+                <label for="score">Total score:</label>
+                <input id="score" type="text" size="2" readonly style="text-align: center; font-size: 24px;">
+            </div>
+        </div>
+        <div id="history">
+            <label>Guess History:<br></label>
+        </div>
+    </div>
+
+
+    <script src="number.js"></script>
+</body>
+
+</html>
