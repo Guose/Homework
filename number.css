@@ -32,9 +32,11 @@
     justify-content: space-around;
 }
 .gameStats{
-    height: 250px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 #history {
     font-size: 20px;
